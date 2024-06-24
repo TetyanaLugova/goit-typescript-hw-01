@@ -6,8 +6,8 @@ type AllType = {
 };
 
 function compare(
-  top: Pick<AllType, "name" | "color" | "position" | "weight">,
-  bottom: Pick<AllType, "name" | "color" | "position" | "weight">
+  top: Pick<AllType, "name" | "color">,
+  bottom: Pick<AllType, "position" | "weight">
 ): AllType {
   return {
     name: top.name,
